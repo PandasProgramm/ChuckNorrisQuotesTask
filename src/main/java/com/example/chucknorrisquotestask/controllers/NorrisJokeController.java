@@ -20,6 +20,5 @@ public class NorrisJokeController {
         model.addAttribute("joke", this.jokeService.getJoke());
         return "index";
     }
-
 }
 
