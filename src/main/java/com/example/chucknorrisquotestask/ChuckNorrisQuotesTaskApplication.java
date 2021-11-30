@@ -9,9 +9,8 @@ import org.springframework.context.ApplicationContext;
 public class ChuckNorrisQuotesTaskApplication {
 
     public static void main(String[] args) {
-        ApplicationContext ctx = SpringApplication.run(ChuckNorrisQuotesTaskApplication.class, args);
-        NorrisJokeController norrisJokeController = (NorrisJokeController) ctx.getBean("norrisJokeController");
-        System.out.println(norrisJokeController.getJoke());
+       SpringApplication.run(ChuckNorrisQuotesTaskApplication.class, args);
+
     }
 
 }
