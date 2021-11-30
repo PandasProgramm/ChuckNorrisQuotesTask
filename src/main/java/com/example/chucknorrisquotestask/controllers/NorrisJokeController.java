@@ -17,8 +17,11 @@ public class NorrisJokeController {
 
     @RequestMapping({"/", ""})
     public String showNorrisJoke(Model model) {
-        model.addAttribute("joke", this.jokeService.getJoke());
+        model.addAttribute("test", this.jokeService.getJoke());
         return "index";
+    }
+    public String getNorrisJokeWithoutTemplate() {
+        return this.jokeService.getJoke();
     }
 }
 

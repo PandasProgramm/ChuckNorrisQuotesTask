@@ -9,8 +9,10 @@ import org.springframework.context.ApplicationContext;
 public class ChuckNorrisQuotesTaskApplication {
 
     public static void main(String[] args) {
-       SpringApplication.run(ChuckNorrisQuotesTaskApplication.class, args);
-
+        SpringApplication.run(ChuckNorrisQuotesTaskApplication.class, args);
+     /* ApplicationContext ctx = SpringApplication.run(ChuckNorrisQuotesTaskApplication.class, args);
+        NorrisJokeController norrisJokeController = (NorrisJokeController) ctx.getBean("norrisJokeController");
+        System.out.println(norrisJokeController.getNorrisJokeWithoutTemplate());*/
     }
 
 }
